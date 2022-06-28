@@ -1,0 +1,151 @@
+.ring-text
+{
+    opacity: 0;
+}
+
+.date-counter, .wedding-date
+{
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Bodoni Moda', serif;
+}
+
+.date-counter, .wedding-date, .wedding-partner
+{
+    top: 50%;
+    left: 50%;
+}
+
+.date-counter
+{
+    // text-align: center;
+    position: fixed;
+    font-size: 11vh;
+    transform: translateX(-50%) translateY(-210%);
+    // opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .count
+    {
+        opacity: 0.15;
+    }
+
+    .days, .hours, .minutes
+    {
+        margin-left: 10px;
+        opacity: 0.3;
+    }
+}
+
+.wedding-date
+{
+    font-weight: 800;
+    font-size: 7vh;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    transform: translateX(-50%) translateY(-420%);
+    opacity: .4;
+    // opacity: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.wedding-partner
+{
+    // opacity: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 10vh;
+    // font-weight: 600;
+    display: flex;
+    position: fixed;
+    transform: translateX(-50%) translateY(150%);
+
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    div.punctuation
+    {
+        font-size: 7vh;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    div.first-partner, div.second-partner
+    {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .date-counter
+    {
+        font-size: 13vmin;
+        transform: translateX(-50%) translateY(180%);
+    }
+
+    .wedding-date
+    {
+        font-size: 7vmin;
+        transform: translateX(-50%) translateY(500%);
+    }
+
+    .wedding-partner
+    {
+        font-size: 12vmin;
+        transform: translateX(-50%) translateY(-150%);
+
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        div.punctuation
+        {
+            font-size: 5vh;
+            padding-left: 0;
+            padding-right: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        // .first-partner, .second-partner
+        // {
+        //     font-size: 10vmin;
+        // }
+    }
+
+    .notification-link
+    {
+        width: 10vmin;
+        height: 10vmin;
+
+        svg
+        {
+            font-size: 6vmin;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) 
+{
+    .notification-link
+    {
+        width: 12vmin;
+        height: 12vmin;
+    }
+}

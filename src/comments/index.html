@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Wedding of Adit dan Hana</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="/assets/app.css" rel="stylesheet">
+  </head>
+  <body data-barba="wrapper">
+
+    <!-- canvas for webgl -->
+    <canvas class="webgl"></canvas>
+
+    <div class="preload">
+      <h1 class="count-load">0%</h1>
+    </div>
+
+    <main data-barba="container" data-barba-namespace="comments" >
+      <header class="is-comments">
+        <div class="transition">
+          <h2>Invitation Cover</h2>
+        </div>
+      </header>
+
+      <!-- Navigation menu for pages-->
+      <nav id="navigation-menu">
+        <a class="left-btn nav-btn" aria-label="Left Button"  href="/gift/">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="menu-btn nav-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a class="right-btn nav-btn" aria-label="Right Button" href="/endcard/">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </nav>
+
+      <a class="links link1" href="/ring/">Awal</a>
+      <a class="links link2" href="/partner/">Partner</a>
+      <a class="links link4" href="/location/">Lokasi</a>
+      <a class="links link3" href="/schedule/">Jadwal</a>
+      <a class="links link5" href="/quote/">Kutipan</a>
+      <a class="links link6" href="/our-stories/">Our Stories</a>
+      <a class="links link7" href="/gift/">Hadiah</a>
+      <a class="links link8 disabled" >Komentar</a>  
+      <a class="links link9" href="/endcard/">Kata Akhir</a>  
+
+      <div  id="comments-container">
+        <div id="allcomments">
+          <span class="comment-title">Sampaikan Pesan</span>
+  
+          <form action="" id="newcomment" onsubmit="return false;">
+              <label for="tbName">Nama</label>
+              <br>
+              <input type="text" id="tbName" maxlength="20" required/>
+              <br>
+              <label for="txComment">Ucapan</label>
+              <br>
+              <textarea name="text-comment" id="txComment" maxlength="400" required></textarea>
+              <br>
+              <input type="radio" value="Datang" id="txAttend" name="attend" required/>
+              <label for="txAttend">Datang</label>
+              <input type="radio" value="Tidak Datang" id="txNotAttend" name="attend" required/>
+              <label for="txNotAttend">Tidak Datang</label>
+              <br>
+              <input id="btnSubmitComment" type="submit" value="Sampaikan" />
+              <br>
+          </form>
+  
+          <!-- will show the past comments in the list below -->
+          <div class="scroll">
+            <ul id="pastcomments"></ul>
+          </div>
+  
+        </div>
+      </div>
+
+      
+    </main>
+
+    <div class="play-btn">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M12.225 4.462C9.89 3.142 7 4.827 7 7.508V24.5c0 2.682 2.892 4.367 5.226 3.045l14.997-8.498c2.367-1.341 2.366-4.751 0-6.091L12.224 4.462Z"/></svg>
+      <svg class="icon switch" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M7.25 3A3.25 3.25 0 0 0 4 6.25v18.5A3.25 3.25 0 0 0 7.25 28h3.5A3.25 3.25 0 0 0 14 24.75V6.25A3.25 3.25 0 0 0 10.75 3h-3.5Zm14 0A3.25 3.25 0 0 0 18 6.25v18.5A3.25 3.25 0 0 0 21.25 28h3.5A3.25 3.25 0 0 0 28 24.75V6.25A3.25 3.25 0 0 0 24.75 3h-3.5Z"/></svg>
+    </div>
+
+    <!-- background -->
+    <div class="background-container"></div>
+
+    <div class="partner1">
+      <span class="partner-name">Nama1</span>
+      <span class="partner-detail">Detail1</span>
+    </div>
+  
+    <!-- detail mempelai kedua -->
+    <div class="partner2">
+      <span class="partner-name">Nama2</span>
+      <span class="partner-detail">Detail2</span>
+    </div>
+    
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
